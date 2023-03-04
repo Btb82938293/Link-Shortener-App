@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  height: 80px;
+  background: rgb(1, 1, 51);
+}
+.nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-icons {
+  width: 100%;
+  /* max-width: 1000px; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1em 5em;
+}
+
+.nav-icon {
+  list-style: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.language-menu-container {
+  width: 100px;
+  height: 15vh;
+  position: absolute;
+  top: 80px;
+  right: 1em;
+  border: 1px solid black;
+  background: rgb(1, 1, 51);
+  color: white;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  display: none;
+}
+.nav-menu-active {
+  display: block;
+}
+
+.language-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  border-radius: 5px;
+}
+.language-menu-item {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.language-menu-item:hover {
+  transform: scale(1.2);
+}
+
+.nav-form-container {
+  background: rgb(1, 1, 51);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -150em;
+  display: flex;
+  justify-content: center;
+  padding-top: 25em;
+  transition: 0.5s;
+}
+.nav-form-active {
+  top: 80px;
+  transition: 0.5s;
+}
+
+.nav-form-icon {
+  color: white;
+  position: absolute;
+  font-size: 2em;
+  top: 0.5em;
+  right: 1em;
+}
+
+nav form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 50%;
+  height: fit-content;
+}
+
+.nav-form-input {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.nav-form-button {
+  padding: 0.5em;
+  margin: 0.5em;
+  background: rgb(246, 131, 73);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-form-options {
+  color: white;
+  display: flex;
+  margin-bottom: 3em;
+  padding: 0.5em;
+}
+
+.nav-form-option {
+  margin-right: 3em;
+  cursor: pointer;
+}
+#nav-form-sign-in-option {
+  border-bottom: 1px solid white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  /* background: green; */
+  background: rgb(12, 7, 159);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 7, 159, 1) 9%,
+    rgba(63, 3, 99, 1) 74%
+  );
+  background-size: 200% 200%;
+
+  -webkit-animation: Animation 10s ease infinite;
+  -moz-animation: Animation 10s ease infinite;
+  animation: Animation 10s ease infinite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 70%;
+  max-width: 700px;
+  padding: 2em;
+}
+
+.container h1 {
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 2rem;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-input:active,
+.form-input:hover,
+.nav-form-input,
+.nav-form-input:hover {
+  outline: none;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.4em 1em;
+  margin-right: 1em;
+  outline: none;
+}
+
+.form-button {
+  width: 10em;
+  padding: 0.6em 1em;
+  border: none;
+  background: rgb(246, 131, 73);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover,
+.nav-form-button:hover {
+  background: rgb(249, 109, 39);
+  transition: 0.5s;
+}
+
+.message {
+  position: absolute;
+  top: 0.1em;
+  right: -500px;
+  margin-top: 2em;
+  font-size: 0.7rem;
+  padding: 1em;
+  background: rgb(0, 150, 131, 0.9);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  transition: 0.7s;
+}
+.active {
+  right: 15px;
+  transition: 0.7s;
+}
+
+.message-text {
+  margin-left: 0.5em;
+}
+
+.message-content {
+  color: white;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.rejected {
+  background: red;
+}
+
+.link {
+  padding: 1em 2em;
+  font-size: 0.7em;
+  background: white;
+  border: 1px solid rgb(246, 131, 73);
+  width: 100%;
+}
+
+.link-container {
+  width: 100%;
+  margin-top: 2em;
+  padding: 1em;
+  border: 1px dashed rgb(246, 131, 73);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.link-description {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.link-buttons {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.link-button {
+  border: none;
+  background: transparent;
+  color: rgb(246, 131, 73);
+  cursor: pointer;
+}
+.link-button:hover {
+  transform: scale(1.2);
+}
+
+.copy-btn {
+  padding: 0.7em;
+  background: transparent;
+  border: 1px solid rgb(246, 131, 73);
+  cursor: pointer;
+  color: white;
+}
+.copy-btn:hover {
+  background: rgb(246, 131, 73);
+  border: 1px solid rgb(246, 131, 73);
+  color: white;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 1.5em;
+  }
+
+  .container h1 {
+    font-weight: 500;
+    margin-bottom: 2em;
+    font-size: 1.5rem;
+  }
+
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-input {
+    width: 100%;
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+  .form-button {
+    width: 100%;
+  }
+
+  .copy-btn {
+    font-size: 0.7rem;
+    padding: 1.1em;
+  }
+  nav form {
+    width: 100%;
+  }
+}
