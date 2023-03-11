@@ -142,13 +142,13 @@ main {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  /* background: green; */
-  background: rgb(12, 7, 159);
+  background: green;
+  /* background: rgb(12, 7, 159);
   background: linear-gradient(
     90deg,
     rgba(12, 7, 159, 1) 9%,
     rgba(63, 3, 99, 1) 74%
-  );
+  ); */
   background-size: 200% 200%;
 
   -webkit-animation: Animation 10s ease infinite;
