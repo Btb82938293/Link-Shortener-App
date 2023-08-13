@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { MdOutlineDone } from "react-icons/md";
-import { VscWarning } from "react-icons/vsc";
-import {
-  BsWhatsapp,
-  BsFacebook,
-  BsTelegram,
-  BsTwitter,
-  BsSkype,
-  BsLinkedin
-} from "react-icons/bs";
-import { SlSocialVkontakte } from "react-icons/sl";
+// import { MdOutlineDone } from "react-icons/md";
+// import { VscWarning } from "react-icons/vsc";
+// import {
+//   BsWhatsapp,
+//   BsFacebook,
+//   BsTelegram,
+//   BsTwitter,
+//   BsSkype,
+//   BsLinkedin
+// } from "react-icons/bs";
+// import { SlSocialVkontakte } from "react-icons/sl";
 
 export default function Hero() {
   //./main3 -a ':8080' -b 'http://localhost:8080'
@@ -45,7 +45,7 @@ export default function Hero() {
     if (validURL(inputValue)) {
       setMessage(
         <p className="message-content">
-          <MdOutlineDone />
+          {/* <MdOutlineDone /> */}
           <span className="message-text">Link has successfully generated.</span>
         </p>
       );
@@ -67,7 +67,7 @@ export default function Hero() {
     } else {
       setMessage(
         <p className="message-content">
-          <VscWarning />
+          {/* <VscWarning /> */}
           <span className="message-text">Please enter correct URL</span>
         </p>
       );
@@ -84,7 +84,7 @@ export default function Hero() {
   const handleClick = () => {
     setMessage(
       <p className="message-content">
-        <MdOutlineDone />
+        {/* <MdOutlineDone /> */}
         <span className="message-text">Short link copied to clipboard.</span>
       </p>
     );
@@ -133,25 +133,25 @@ export default function Hero() {
             </div>
             <div className="link-buttons">
               <button className="link-button">
-                <BsTelegram size={"2em"} />
+                {/* <BsTelegram size={"2em"} /> */}
               </button>
               <button className="link-button">
-                <BsWhatsapp size={"2em"} />
+                {/* <BsWhatsapp size={"2em"} /> */}
               </button>
               <button className="link-button">
-                <SlSocialVkontakte size={"2em"} />
+                {/* <SlSocialVkontakte size={"2em"} /> */}
               </button>
               <button className="link-button">
-                <BsFacebook size={"2em"} />
+                {/* <BsFacebook size={"2em"} /> */}
               </button>
               <button className="link-button">
-                <BsTwitter size={"2em"} />
+                {/* <BsTwitter size={"2em"} /> */}
               </button>
               <button className="link-button">
-                <BsSkype size={"2em"} />
+                {/* <BsSkype size={"2em"} /> */}
               </button>
               <button className="link-button">
-                <BsLinkedin size={"2em"} />
+                {/* <BsLinkedin size={"2em"} /> */}
               </button>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
+// import { AiOutlineClose } from "react-icons/ai";
 
 export default function Nav() {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -51,7 +51,7 @@ export default function Nav() {
             : "nav-form-container nav-form-active"
         }
       >
-        <AiOutlineClose onClick={hideForm} className="nav-form-icon" />
+        {/* <AiOutlineClose onClick={hideForm} className="nav-form-icon" /> */}
         <form>
           <div className="nav-form-options">
             <p id="nav-form-sign-in-option" className="nav-form-option">
