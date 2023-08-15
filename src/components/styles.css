@@ -85,7 +85,7 @@ nav {
   display: flex;
   justify-content: center;
   padding-top: 25em;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 .nav-form-active {
   top: 80px;
